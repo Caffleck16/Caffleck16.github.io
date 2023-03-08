@@ -12,7 +12,7 @@ const Note = () => {
             nav("/notes");
         }
     })
-    const [titleVal, setTitleVal] = useState(notes[noteID].title || "Untitled");
+    const [titleVal, setTitleVal] = useState(notes[noteID].title);
     const [dateVal, setDateVal] = useState(notes[noteID].time);
     const [noteVal, setNoteVal] = useState(notes[noteID].note);
     const [currNote, setCurrNote] = useState({});
